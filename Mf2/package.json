@@ -1,0 +1,24 @@
+{
+  "name": "nextjs-ssr_checkout",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next dev",
+    "build": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next start",
+    "lint": "next lint",
+	"pm2": "pm2 start pm2.json"
+	
+	},
+  "dependencies": {
+    "@module-federation/nextjs-mf": "8.3.28",
+    "cross-env": "^7.0.3",
+    "lodash": "4.17.21",
+    "next": "^14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "5.92.1"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
